@@ -15,10 +15,7 @@
   color: var(--text-white);
 }
 
-.footer__links {
-  display: block;
-  order: 1;
-}
+
 
 .footer__links {
   display: block;
@@ -28,6 +25,7 @@
 
 .footer__links>a {
   padding: 0.5rem;
+  color: var(--text-white);
 }
 
 .footer__links>p {
