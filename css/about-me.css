@@ -4,6 +4,15 @@
   margin: 3rem;
 }
 
+h2.about-me__title-text {
+  padding-top: 7rem;
+}
+
+p.about-me__paragraph-text {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
 /* This screen is split into 4 sections and each section contains another container that holds each section's content - tabout-me__container is a flexbox for responsiveness */
 
 .about-me__container {
