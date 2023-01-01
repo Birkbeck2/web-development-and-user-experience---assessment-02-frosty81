@@ -7,7 +7,7 @@
 @import url("./portfolio.css");
 @import url("./footer.css");
 @import url("./media-queries.css");
-
+@import url("./navbar.css");
 /* Used :Root to allow the setting of colors which can be used throughout the different stylesheets - this alo allows me the ability to change the colours throughot the site if needed */
 
 :root {
@@ -47,6 +47,11 @@ img {
   height: auto;
 }
 
+svg {
+  width: 5rem;
+  height: 5rem;
+}
+
 video {
   max-width: 100%;
   height: auto;
@@ -70,20 +75,6 @@ textarea {
   height: 100%;
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.5rem;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-
-svg {
-  width: 5rem;
-  height: 5rem;
-}
-
 a:link {
   text-decoration: none;
   color: var(--text-white);
@@ -100,46 +91,4 @@ a:hover {
 
 a:active {
   text-decoration: underline;
-}
-
-ul,
-a {
-  color: var(--text-white);
-  text-decoration: none;
-  list-style: none;
-}
-
-ul {
-  margin: 0;
-}
-
-nav ul li {
-  list-style-type: none;
-  display: inline;
-  padding: 1.6rem 1.6rem;
-  float: none;
-}
-
-nav ul li a {
-  color: var(--text-white);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: var(--text-white);
-  transition: 2.5s;
-}
-
-#navbar {
-  background-color: #333;
-  color: var(--text-white);
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar__logo {
-  color: var(--text-white);
-  font-size: 2.8rem;
-  margin: 0;
 }
