@@ -1,0 +1,461 @@
+/* Media queries */
+
+@media (min-width: 165px) {
+  h1.navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  h2.about-me__title-text {
+    font-size: 4rem;
+    margin-top: 2rem;
+  }
+
+  a.navbar__links {
+    font-size: 0.8rem;
+  }
+
+  li>a {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h1.landing-page__text {
+    margin-top: 4.8rem;
+  }
+
+  .landing-page-text__container {
+    margin: 0;
+  }
+
+  div.landing-page__navbox-container {
+    margin-top: 0;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+
+  .landing-page__navbox {
+    margin-bottom: 7rem;
+  }
+
+  .landing-page__background {
+    height: 260vh;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 5rem 2rem 5rem;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 5rem 2rem 5rem;
+  }
+
+  .about-me__paragraph-text {
+    font-size: 1rem;
+    margin-top: 5rem;
+  }
+
+  .about-me__container:nth-child(2) {
+    background-color: var(--primary);
+    height: 190vh;
+
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 230vh;
+  }
+
+  .about-me__services-container {
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me__services-container--col-1>h3,
+  .about-me__services-container--col-2>h3,
+  .about-me__services-container--col-3>h3 {
+    font-size: 2rem;
+    color: var(--secondary);
+  }
+
+  .about-me__services-container--col-1>p,
+  .about-me__services-container--col-2>p,
+  .about-me__services-container--col-3>p {
+    font-size: 1rem;
+    margin: 1rem;
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .contact-form__form-container {
+    height: 80vh;
+  }
+
+  div.portfolio-title {
+    margin-top: 5.1rem;
+    padding: 0;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices -landscape phones */
+@media (min-width: 576px) {
+  h1.navbar__logo {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  a.navbar__links {
+    font-size: 1rem;
+  }
+
+  h1.landing-page__text {
+    margin-top: 6.8rem;
+  }
+
+  .landing-page-text__container {
+    margin-bottom: 4.7rem;
+  }
+
+  .landing-page__navbox {
+    margin-bottom: 1rem;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .landing-page__background {
+    height: 220vh;
+  }
+
+  h2.about-me__title-text {
+    font-size: 5rem;
+    margin-top: 2rem;
+  }
+
+  h2.about-me__section-2 {
+    font-size: 1rem;
+  }
+
+  p.about-me__title-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  div.about-me__services-container {
+    padding: 2rem;
+  }
+
+  .about-me__container:nth-child(2) {
+    background-color: var(--primary);
+    height: 160vh;
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 240vh;
+  }
+
+  .about-me__services-container {
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me__services-container--col-1>h1,
+  .about-me__services-container--col-2>h1,
+  .about-me__services-container--col-3>h1 {
+    font-size: 2.5rem;
+    color: var(--secondary);
+    font-weight: bold;
+  }
+
+  .about-me__services-container--col-1>p,
+  .about-me__services-container--col-2>p,
+  .about-me__services-container--col-3>p {
+    margin: 1rem;
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .contact-form__form-container {
+    height: 80vh;
+  }
+
+  .contact-form__title-text {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+  }
+
+  div.portfolio-title {
+    margin-top: 5.5rem;
+  }
+
+  footer {
+    font-size: .8rem;
+  }
+}
+
+/* Medium devices - tablets */
+@media (min-width: 768px) {
+  h2.navbar__logo {
+    padding: 0;
+    font-size: 1.4rem;
+  }
+
+  .navbar__links {
+    font-size: 5rem;
+  }
+
+  h1.landing-page__text {
+    margin-top: 7.8rem;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 8rem 0.5rem 8rem;
+  }
+
+  .landing-page__background {
+    height: 210vh;
+    width: 100%;
+  }
+
+  div.about-me__services-container {
+    padding: 2rem;
+  }
+
+  .about-me__services-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 8rem 0 2rem 0;
+  }
+
+  h2.about-me__title-text {
+    margin-top: 0.6rem;
+  }
+
+  .about-me__container:nth-child(2) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(3) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 170vh;
+  }
+
+  .about-me__services-container--col-1>h3,
+  .about-me__services-container--col-2>h3,
+  .about-me__services-container--col-3>h3 {
+    margin: 0;
+    padding: 0.3rem;
+    font-size: 1.7rem;
+    color: var(--secondary);
+    font-weight: bold;
+  }
+
+  .about-me__services-container--col-1>p,
+  .about-me__services-container--col-2>p,
+  .about-me__services-container--col-3>p {
+    margin: 1rem;
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  div.portfolio-title {
+    margin-top: 5.8rem;
+  }
+}
+
+/* Large devices  - desktops*/
+@media (min-width: 992px) {
+  #navbar {
+    padding: 0;
+  }
+
+  .navbar__links {
+    font-size: 1.5rem;
+  }
+
+  h2.navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  h1.landing-page__text {
+    margin-top: 10.5rem;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .landing-page__background {
+    height: 220vh;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 5rem 2rem 5rem;
+  }
+
+  .about-me__title-text {
+    margin-top: 5rem;
+  }
+
+  .about-me__container:nth-child(2) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 140vh;
+  }
+
+  .about-me__services-container--col-1>h3,
+  .about-me__services-container--col-2>h3,
+  .about-me__services-container--col-3>h3 {
+    margin: 2rem;
+    padding: 0.5rem;
+    font-size: 1.7rem;
+    color: var(--secondary);
+    font-weight: bold;
+  }
+
+  .about-me__services-container--col-1>p,
+  .about-me__services-container--col-2>p,
+  .about-me__services-container--col-3>p {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .about-me__services-container--col-1,
+  .about-me__services-container--col-2,
+  .about-me__services-container--col-3 {
+    margin: 0;
+  }
+
+  .about-me__container:nth-child(3) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 170vh;
+  }
+
+  div.portfolio-title {
+    margin-top: 5.8rem;
+  }
+}
+
+/* Large devices  -  large desktops */
+@media (min-width: 1200px) {
+  h2.navbar__logo {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  h1.landing-page__text {
+    margin-top: 3.5rem;
+  }
+
+  .navbar-links {
+    font-size: 1.5rem;
+  }
+
+  .landing-page__background {
+    height: 100vh;
+  }
+
+  .landing-page__navbox-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-me__container:nth-child(1) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(2) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(3) {
+    height: 100vh;
+  }
+
+  .about-me__container:nth-child(4) {
+    background-color: var(--primary);
+    height: 100vh;
+  }
+
+  .about-me__services-container--col-1>h3,
+  .about-me__services-container--col-2>h3,
+  .about-me__services-container--col-3>h3 {
+    margin: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+  }
+
+  .about-me__services-container--col-1>p,
+  .about-me__services-container--col-2>p,
+  .about-me__services-container--col-3>p {
+    color: var(--secondary);
+    font-size: 1rem;
+  }
+
+  div.portfolio-title {
+    margin-top: 5.7rem;
+  }
+}

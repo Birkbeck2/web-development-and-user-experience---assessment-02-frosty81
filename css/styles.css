@@ -1,0 +1,147 @@
+/* decided to seperated the stylesheets and use this as the main stylesheet for the html documents for better organisation and to prevent a huge singular css document */
+
+/* Imported the seperate stylesheets into this main stylesheet */
+@import url("./landing-page.css");
+@import url("./about-me.css");
+@import url("./contact-me.css");
+@import url("./portfolio.css");
+@import url("./footer.css");
+@import url("./media-queries.css");
+
+/* Used :Root to allow the setting of colors which can be used throughout the different stylesheets - this alo allows me the ability to change the colours throughot the site if needed */
+
+:root {
+  --primary: #f57a8f;
+  --secondary: #0f0f0f;
+  --text-white: #ffffff;
+}
+
+html {
+  font-size: 100%;
+}
+
+/* This was done to remove any browser css style defaults to all the html tags, I added the before and after selectors to ensure  that the parameters are applied before and after every css selector is applied */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting the default body elements with the below */
+body {
+  font-family: "RaleWay", sans-serif;
+  box-sizing: border-box;
+  line-height: 1.7;
+  color: var(--text-white);
+}
+
+/* The following was used to set the default of the primary semantic html tags that will then be altered in individual stylesheets if needed */
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+span {
+  color: var(--primary);
+}
+
+input {
+
+  width: 100%;
+  padding: .8rem 1.1rem;
+  margin: .5rem 0;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: .5rem;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+svg {
+  width: 5rem;
+  height: 5rem;
+}
+
+
+a:link {
+  text-decoration: none;
+  color: var(--text-white);
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+ul,
+a {
+  color: var(--text-white);
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  margin: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 1.6rem 1.6rem;
+  float: none;
+}
+
+nav ul li a {
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: var(--text-white);
+  transition: 2.5s;
+}
+
+#navbar {
+  background-color: #333;
+  color: var(--text-white);
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__logo {
+  color: var(--text-white);
+  font-size: 2.8rem;
+  margin: 0;
+}

@@ -1,0 +1,121 @@
+/* Landing/home page stylesheet*/
+
+/* Background for landing page is set to cover the whole viewport.
+  I set the line spacing to 1.7 to allow the page to be more legible. I chose a dark contrasting gradient as a backgoround that will allow the other elements to be seen easily */
+
+.landing-page__background {
+  height: 100vh;
+  width: 100%;
+  letter-spacing: 5px;
+  background-image: linear-gradient(60deg, grey, var(--secondary));
+}
+
+/* Heading is contained in a section tag. The container is using flexbox and aligned centrally. Flex was used to allow the heading to be responsive in size */
+
+.landing-page-text__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.landing-page__text {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--text-white);
+  margin-top: 1.7rem;
+}
+
+.landing-page__text-span {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.landing-page__text-span2 {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+/* Below refers to the the nav boxes used as links to other areas of the site. Each navbox is using flexbox for responsivness */
+
+.landing-page__navbox {
+  width: 100%;
+  border: 3px solid var(--text-white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 2rem;
+}
+
+.landing-page__navbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 6em 5rem 2rem 5rem;
+  gap: 2rem;
+}
+
+/* Added some animation through a border and box shadow that responds to the user hovering over the nav box. */
+.landing-page__navbox:hover {
+  border: solid 2px var(--primary);
+  transition: border-width 0.6s linear;
+  box-shadow: 3px 3px 10px var(--primary);
+  text-decoration: none;
+}
+
+/*The following was used to style and place the content within each navbox. I used the order parameter to define the significance of each element within the navbox. This was done to help screenreaders make sence of the content */
+
+.landing-page__navbox-content {
+  color: var(--text-white);
+  padding: 5px;
+}
+
+.landing-page__navbox-content>h1 {
+  order: 1;
+  text-decoration: none;
+}
+
+.landing-page__navbox-content>p {
+  order: 3;
+  margin-top: 16rem;
+}
+
+/* According to MDN Web Docs - Using the order property will create a disconnect between the visual presentation of content and DOM order. This will adversely affect users experiencing low vision navigating with the aid of assistive technology such as a screen reader. */
+.landing-page__navbox-content>img {
+  order: -1;
+}
+
+.landing-page__navbox-content>hr {
+  order: 2;
+  color: var(--text-white);
+}
+
+/* Each navbox had its own background image
+and each image had a linear gradient to darken each image to allow the text from the h1 and p tag contents to be more prominent */
+
+.landing-page__navbox-inner-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/landing-page-about.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.landing-page__navbox-inner-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1.8)),
+    url("../images/landing-page-portfolio.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.landing-page__navbox-inner-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/landing-page-contact.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}

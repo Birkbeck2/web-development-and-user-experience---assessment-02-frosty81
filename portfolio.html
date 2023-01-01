@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- this meta is added to support mutiple browser types and set the initial scale to improve cross browser conformity -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- description added to aid with search engine optimisation -->
+    <meta
+      name="description"
+      content="Personal portfolio for professional photography and videographer"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- google font api to use their fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600;700;800&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script tag to connect javascript - defer paramebter used to load parse the javascript file after everything else is loaded allowing for the script tag to be in head of dom -->
+    <script src="./js/index.js" defer></script>
+    <!-- Title of page - this will show in the browser tab -->
+    <title>Portfolio</title>
+  </head>
+
+  <body class="portfolio-body">
+    <header>
+      <nav id="navbar">
+        <h1 class="navbar__logo">Photo <span>Wizz</span></h1>
+        <ul>
+          <li>
+            <!-- Used github pages url to allow the navbar to redirect to pages within pages repo -->
+            <a
+              class="navbar__links"
+              href=" https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar__links"
+              href=" https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/about-me.html"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar__links"
+              href=" https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              class="navbar__links"
+              href=" https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/contact-me.html"
+              >Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Grid for images -->
+      <div class="portfolio-page-container">
+        <div class="portfolio-title">
+          <h1 class="portfolio-title-text">Portfolio</h1>
+        </div>
+
+        <div class="portfolio-container">
+          <h2 class="portfolio-title-text-h2">Photography</h2>
+          <!-- Below is the container that holds the photo gallery  that is generated through javascript - this is done by using the ID attribute-->
+          <div id="portfolio"></div>
+        </div>
+
+        <!-- src and alt intentionallty left blank as the paramenters will be dynamically added with javascript function that iterates over  portfolio images -->
+        <div id="pop-up"><img src="" alt="" id="selected-image" /></div>
+      </div>
+      <div class="portfolio-video-container">
+        <div class="portfolio-title">
+          <h2 class="portfolio-title-text-h2">Videography</h2>
+        </div>
+      </div>
+
+      <!-- Flex box for videos -->
+      <div class="portfolio-video-section-container">
+        <!-- video tag used and inline controls set to autoplay and audio muted on initialisation also inline width and height set -->
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Chocolate.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Croissant.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Espresso.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Restaurant.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Running-Sushi.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <video width="500" height="320" autoplay muted>
+          <source src="./images/videos/Seoul.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer__container">
+        <!-- Footer links for social media including aria labels -->
+        <div class="footer__links-socials">
+          <a href="https://www.twitter.com" target="blank" aria-label="social media link to Twitter"
+            ><i class="ph-twitter-logo ph-xl ph-2x"></i
+          ></a>
+          <a href="https://www.behance.com" target="blank" aria-label="social media link to Behance"
+            ><i class="ph-behance-logo ph-xl ph-2x"></i
+          ></a>
+          <a href="https://www.youtube.com" target="blank" aria-label="social media link to Youtube"
+            ><i class="ph-youtube-logo ph-xl ph-2x"></i
+          ></a>
+          <a href="https://www.facebook.com" target="blank" aria-label="social media link to Facebook"
+            ><i class="ph-facebook-logo ph-xl ph-2x"></i
+          ></a>
+        </div>
+
+        <!-- Footer links for terms and conditions only for comestic purposes hence # used as href to not redirect anywhere-->
+        <div class="footer__links">
+          <a href="#">Terms and conditons</a>
+          <a href="#">Privacy Policy</a>
+          <p>©2023 PhotoWizz</p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

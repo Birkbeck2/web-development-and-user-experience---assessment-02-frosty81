@@ -1,0 +1,107 @@
+/* Portfolio page */
+
+/* Css Grid used for gallery layout - auto-fit used to negate a need for setting colum and row width */
+#portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-row-gap: 1rem;
+  justify-items: center;
+}
+
+.portfolio-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  place-items: center;
+}
+
+.portfolio-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.portfolio-title-text {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 1.75rem;
+  color: var(--text-white);
+}
+
+.portfolio-title-text-h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--text-white);
+  padding: 0;
+  text-align: center;
+}
+
+.portfolio-title-text-h2:hover {
+  color: var(--primary);
+}
+
+.portfolio-img {
+  max-width: 100%;
+  position: relative;
+  /* Used to smmoth the movement of the image when hovered over */
+  transition: transform 550ms;
+  cursor: pointer;
+  height: 200px;
+  width: 300px;
+  border: 0.5rem solid var(--text-white);
+}
+
+.portfolio-body {
+  background-image: linear-gradient(60deg, grey, var(--secondary));
+  background-clip: text;
+}
+
+.portfolio-img:hover {
+  /* used to animate each image */
+  transform: translateY(-20px);
+  box-shadow: 3px 3px 10px var(--primary);
+}
+
+.portfolio-video-section-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.portfolio-video-section-container video {
+  border: 0.5rem solid var(--text-white);
+  margin: 1rem;
+}
+
+.portfolio-video-section-container video:hover {
+  transform: translateY(-20px);
+  box-shadow: 3px 3px 10px var(--primary);
+}
+
+.portfolio-video-section-container {
+  margin-bottom: 10rem;
+}
+
+#pop-up {
+  position: fixed;
+  /* Top, bottom, reight, left - determines positon of popup */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Used to smooth the transition from image to popup */
+  transform: translateY(-100%);
+  transition: 250ms transform;
+  padding: 50px;
+}
+
+#selected-image {
+  max-height: 100%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- this meta is added to support mutiple browser types and set the initial scale to improve cross browser conformity -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- description added to aid with search engine optimisation -->
+    <meta name="description" content="Personal portfolio for professional photography and videographer" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <!-- google font api to use their fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500;600;700;800&family=Raleway&display=swap"
+      rel="stylesheet" />
+    <!-- script tag to connect javascript - defer paramebter used to load parse the javascript file after everything else is loaded allowing for the script tag to be in head of dom -->
+    <script src="./js/index.js" defer></script>
+    <!-- Title of page - this will show in the browser tab -->
+    <title>Personal Portfolio</title>
+  </head>
+
+  <body>
+    <!-- Article tag used to wrap self-contained content -->
+    <main class="landing-page__background">
+      <!-- Header used to seperate introductory content -->
+      <header>
+        <nav id="navbar">
+          <h2 class="logo">Photo <span>Wizz</span></h2>
+        </nav>
+      </header>
+
+      <div>
+        <!-- section used to seperate standalone  sections  within the main element-->
+        <section class="landing-page-text__container">
+          <h1 class="landing-page__text">
+            I am Photo<span class="landing-page-text-span">Wizz</span>....photograpy and
+            videography are my
+            <span class="landing-page__text-span2">Superpowers!</span>
+          </h1>
+        </section>
+
+        <div class="landing-page__navbox-container">
+          <!-- used a tag to wrap content to allow the user to directly click on content to navigate -->
+          <a class="landing-page__navbox"
+            href=" https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/about-me.html">
+            <section class="landing-page__navbox-content landing-page__navbox-inner-1">
+              <h1>About</h1>
+              <!-- hr tag  used to add a visual seperator between title and description for asthetic purposes -->
+              <hr />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate, totam?
+              </p>
+              <hr />
+            </section>
+          </a>
+
+          <a class="landing-page__navbox"
+            href="https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/portfolio.html">
+            <section class="landing-page__navbox-content landing-page__navbox-inner-2">
+              <h1>Portfolio</h1>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate, totam?
+              </p>
+
+              <hr />
+            </section>
+          </a>
+          <a class="landing-page__navbox"
+            href="https://birkbeck2.github.io/web-development-and-user-experience---assessment-02-frosty81/contact-me.html">
+            <section class="landing-page__navbox-content landing-page__navbox-inner-3">
+              <h1>Contact</h1>
+              <hr />
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Cupiditate, totam?
+              </p>
+
+              <hr />
+            </section>
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+/* About-Me page */
+
+.about-me__title-text {
+  margin: 3rem;
+}
+
+/* This screen is split into 4 sections and each section contains another container that holds each section's content - tabout-me__container is a flexbox for responsiveness */
+
+.about-me__container {
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+  color: var(--text-white);
+  z-index: 1;
+}
+
+.about-me__content-container {
+  width: 100vw;
+  text-align: center;
+}
+
+.about-me__content-container>h2 {
+  color: var(--secondary);
+}
+
+.about-me__services-container--col-1>h3,
+.about-me__services-container--col-2>h3,
+.about-me__services-container--col-3>h3 {
+  margin: 3rem;
+  font-size: 1.5rem;
+}
+
+.about-me__services-container--col-1>p,
+.about-me__services-container--col-2>p,
+.about-me__services-container--col-3>p {
+  margin: 0 1rem 1rem 1rem;
+}
+
+.about-me__section-1 {
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  color: var(--text-white);
+}
+
+.about-me__section-2 {
+  font-weight: bold;
+  width: 100%;
+  height: 100vh;
+  color: var(--text-white);
+  z-index: 1;
+  text-align: center;
+}
+
+.about-me__section-2>h2 {
+  display: flex;
+  flex-direction: row;
+  display: block;
+}
+
+.about-me__section-1>h2 {
+  display: flex;
+  flex-direction: row;
+  display: block;
+  margin-top: 2.5rem;
+}
+
+.about-me__section-1>p {
+  display: flex;
+  flex-direction: row;
+  display: block;
+  margin: 7rem 7rem 0 7rem;
+  padding: 0.5rem;
+}
+
+/* Used nth-child to target each section and in each section the background was set using linear gradients */
+.about-me__container:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://upload.wikimedia.org/wikipedia/commons/a/a8/Castel_San_Pietro_Rome_Italy_Landscape_Photography_%28189578259%29.jpeg");
+  background-size: cover;
+  color: var(--text-white);
+  text-align: center;
+  height: 100vh;
+}
+
+.about-me__container:nth-child(2) {
+  background-color: var(--primary);
+  height: 100vh;
+  color: var(--secondary);
+}
+
+.about-me__container:nth-child(3) {
+  height: 37.5rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("../images/parallax-cookie-bg-img.jpg");
+  background-size: cover;
+  /* used the below parameter to give this container a parralax effect - this specifies how the background moves relative to the viewport */
+  background-attachment: fixed;
+  color: var(--text-white);
+}
+
+.about-me__container:nth-child(4) {
+  background-color: var(--primary);
+  height: 100vh;
+}
+
+.about-me__section-2>h2 {
+  color: var(--secondary);
+}
+
+.about-me__testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* used to make  the three testimonial boxes to wrap and split based on viewport size */
+  flex-wrap: wrap;
+}
+
+.about-me__testimonial-items>p,
+.about-me__testimonial-items>h2 {
+  color: var(--secondary);
+}
+
+.about-me__testimonial-items {
+  border: 0.25rem solid var(--text-white);
+  width: 15rem;
+  height: 30rem;
+  margin: 2rem;
+  /*   0 grow, 1 shrink and the width/basis set to 20rem, */
+  flex: 0 1 20rem;
+}
+
+.about-me__testimonial-items>img,
+.about-me__testimonial-items>h2,
+.about-me__testimonial-items>p {
+  padding: 1rem;
+}
+
+.about-me__testimonial-img {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  margin: 0;
+  display: inline;
+}
