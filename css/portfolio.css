@@ -55,7 +55,6 @@
 
 .portfolio-body {
   background-image: linear-gradient(60deg, grey, var(--secondary));
-  background-clip: text;
 }
 
 .portfolio-img:hover {

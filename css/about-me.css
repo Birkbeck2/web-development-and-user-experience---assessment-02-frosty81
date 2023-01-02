@@ -18,6 +18,10 @@ p.about-me__paragraph-text {
   text-decoration: none;
 }
 
+.active {
+  color: var(--primary);
+}
+
 /* This screen is split into 4 sections and each section contains another container that holds each section's content - tabout-me__container is a flexbox for responsiveness */
 
 .about-me__container {
